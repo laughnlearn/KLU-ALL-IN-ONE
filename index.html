@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One KLU Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/piceturs/KLERP.png">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --hover-color: #2980b9;
+            --background-start: #f5f7fa;
+            --background-end: #c3cfe2;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--background-start) 0%, var(--background-end) 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px var(--shadow-color);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 36px;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        .grid-item {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 5px 15px var(--shadow-color);
+        }
+
+        .grid-item:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+
+        .grid-item a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        img {
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .section-title {
+            grid-column: 1 / -1;
+            color: var(--primary-color);
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+            padding: 10px 0;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .section-title:not(:first-child) {
+            margin-top: 30px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .copyright {
+            color: var(--primary-color);
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .footer-text {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .contact-info {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .grid-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <h2>All-in-One KLU Hub</h2>
+                <p class="subtitle">Your Gateway to Essential Resources</p>
+            </div>
+            
+            <div class="grid-container">
+                <!-- KLU Resources -->
+                <div class="section-title">KLU Resources</div>
+                <div class="grid-item"><a href="https://newerp.kluniversity.in/" target="_blank"><img src="/klerp.png" alt="ERP">ERP</a></div>
+                <div class="grid-item"><a href="https://lms.kluniversity.in/login/index.php" target="_blank"><img src="/kllms.png" height="100" width="100" alt="LMS">LMS</a></div>
+                <div class="grid-item"><a href="https://academics.klef.in/login" target="_blank"><img src="/klacedamics.png" alt="KL Academics" width="100" height="100">KL ACADEMICS</a></div>
+                <div class="grid-item"><a href="https://kleats.in/" target="_blank"><img src="/kleats.png" alt="KL Eats" width="150" height="100">KL EATS</a></div>
+
+                <!-- Social Media -->
+                <div class="section-title">Social Media</div>
+                <div class="grid-item"><a href="https://web.whatsapp.com/" target="_blank"><img src="/whatsapp.png" alt="WhatsApp" width="100" height="100">WHATSAPP</a></div>
+                <div class="grid-item"><a href="https://web.telegram.org/a/" target="_blank"><img src="/telegram.png" alt="Telegram" width="100" height="100">TELEGRAM</a></div>
+                <div class="grid-item"><a href="https://www.youtube.com/" target="_blank"><img src="/youtube.png" alt="YouTube" width="100" height="100">YOUTUBE</a></div>
+                <div class="grid-item"><a href="https://www.instagram.com/" target="_blank"><img src="/instgram.png" alt="Instagram" height="100" width="100">INSTAGRAM</a></div>
+
+                <!-- AI Tools -->
+                <div class="section-title">AI Tools</div>
+                <div class="grid-item"><a href="https://chatgpt.com/" target="_blank"><img src="/chatgpt.png" alt="ChatGPT" height="100" width="100">CHAT GPT</a></div>
+                <div class="grid-item"><a href="https://www.blackbox.ai/" target="_blank"><img src="/blackbox.png" alt="Blackbox AI" height="100" width="100">BLACK BOX</a></div>
+                <div class="grid-item"><a href="https://copilot.microsoft.com/" target="_blank"><img src="/copialot.png" alt="Copilot" height="120" width="120">COPILOT</a></div>
+                <div class="grid-item"><a href="https://github.com/" target="_blank"><img src="/github.png" alt="Github" height="120" width="120">GITHUB</a></div>
+
+                <!-- Development Tools -->
+                <div class="section-title">Development Tools</div>
+                <div class="grid-item"><a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank"><img src="/clanguage.png" alt="C Compiler" width="150" height="100">ONLINE C COMPILER</a></div>
+                <div class="grid-item"><a href="https://www.onlinegdb.com/online_java_compiler" target="_blank"><img src="/java.png" alt="Java Compiler" width="150" height="100">ONLINE JAVA COMPILER</a></div>
+                <div class="grid-item"><a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank"><img src="/python.png" alt="Python Compiler" width="100" height="100">ONLINE PYTHON COMPILER</a></div>
+                <div class="grid-item"><a href="https://www.codechef.com/login" target="_blank"><img src="/codechef.png" alt="CodeChef" width="150" height="100">CODECHEF</a></div>
+
+                <!-- Utilities -->
+                <div class="section-title">Utilities</div>
+                <div class="grid-item"><a href="https://likithkandepu13.github.io/attendance/" target="_blank"><img src="/attendance.png" alt="Attendance Calculator" height="100" width="150">ATTENDANCE CALCULATOR</a></div>
+                <div class="grid-item"><a href="https://outlook.office.com/mail/" target="_blank"><img src="/outlook.png" alt="Outlook" width="100" height="100">OUTLOOK</a></div>
+                <div class="grid-item"><a href="https://mail.google.com/mail/" target="_blank"><img src="/mail.png" alt="Gmail" width="120" height="100">GMAIL</a></div>
+                <div class="grid-item"><a href="https://www.coursera.org" target="_blank"><img src="/coursera.png" alt="Coursera" height="100" width="100">COURSERA</a></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="copyright">
+                © 2024 GJS. All rights reserved.
+            </div>
+            <div class="footer-text">
+                Made with ❤️ for KLU Students
+            </div>
+            <div class="contact-info">
+                For queries: <a href="mailto:laughnlearn1820@gmail.com">laughnlearn1820@gmail.com</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
